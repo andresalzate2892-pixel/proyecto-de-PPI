@@ -1,0 +1,160 @@
+{
+  "usuarios": [
+    {
+      "name": "moon seven",
+      "email": "sevenmoon30@gmail.com",
+      "password": "Pinguino1234",
+      "id": "krrtG11FFZ8"
+    },
+    {
+      "name": "Carlos dt",
+      "email": "Carlos@gmail.pepe",
+      "password": "calo12",
+      "id": "Qz_eLHeCGzI"
+    },
+    {
+      "name": "Juan alzate ",
+      "email": "juanal@gmail.com",
+      "password": "Admin123",
+      "id": "-ggXuf6mzi4"
+    },
+    {
+      "name": "Andrés A.",
+      "email": "andresalzate2898@hotmail.com",
+      "password": "Admin123",
+      "id": "XbC4mp9elSU"
+    },
+    {
+      "name": "pepe",
+      "email": "pepe@pepe.com",
+      "password": "pepe",
+      "id": "vREl3wa933Y"
+    }
+  ],
+  "espacios": [],
+  "movimientos": [
+    {
+      "type": "Ingreso",
+      "date": "2026-09-25",
+      "description": "venta",
+      "value": 10000,
+      "category": "Alimentación",
+      "userId": "krrtG11FFZ8",
+      "space": "Personal",
+      "id": "WQsIFsEZgU4"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-09-14",
+      "description": "MOTO ",
+      "value": 1200000,
+      "category": "Transporte",
+      "userId": "XbC4mp9elSU",
+      "space": "Personal",
+      "id": "_m7K3D6FQHI"
+    },
+    {
+      "type": "Ingreso",
+      "date": "2026-10-22",
+      "description": "apartamentos ",
+      "value": 2455500,
+      "category": "apartamento",
+      "userId": "XbC4mp9elSU",
+      "space": "Personal",
+      "id": "-CFTEVith7o"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-10-13",
+      "description": "compra",
+      "value": 585222,
+      "category": "",
+      "userId": "vREl3wa933Y",
+      "space": "Personal",
+      "id": "guiM4UwOO4M"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-10-13",
+      "description": "moto",
+      "value": 31500000,
+      "category": "",
+      "userId": "vREl3wa933Y",
+      "space": "Personal",
+      "id": "aLIjEActcSo"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-10-15",
+      "description": "compra",
+      "value": 100000000,
+      "category": "Vivienda",
+      "userId": "vREl3wa933Y",
+      "space": "Personal",
+      "id": "n_h1OP0NzJ0"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-10-15",
+      "description": "MOTO ",
+      "value": 50000,
+      "category": "Alimentación",
+      "userId": "XbC4mp9elSU",
+      "space": "Personal",
+      "id": "l0Sdrj7Zbzo"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-10-16",
+      "description": "moto",
+      "value": 100000,
+      "category": "Alimentación",
+      "userId": "XbC4mp9elSU",
+      "space": "Personal",
+      "id": "07093nAusgU"
+    }
+  ],
+  "categorias": [],
+  "presupuestos": [
+    {
+      "name": "moon seven",
+      "limit": 300000,
+      "category": "Alimentación",
+      "startDate": "2026-09-11",
+      "endDate": "2026-10-04",
+      "userId": "krrtG11FFZ8",
+      "id": "nmNRc-xH0e4"
+    },
+    {
+      "name": "khjh",
+      "limit": 100000000,
+      "category": "Vivienda",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "userId": "vREl3wa933Y",
+      "space": "Personal",
+      "id": "w2VAKqlnnH4"
+    },
+    {
+      "name": "khjh",
+      "limit": 100000,
+      "category": "Alimentación",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "userId": "XbC4mp9elSU",
+      "space": "Personal",
+      "id": "7uAj_UhBO-s"
+    },
+    {
+      "name": "khjh",
+      "limit": 100000,
+      "category": "General",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "userId": "XbC4mp9elSU",
+      "space": "Personal",
+      "id": "z_cS-RNvrfo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

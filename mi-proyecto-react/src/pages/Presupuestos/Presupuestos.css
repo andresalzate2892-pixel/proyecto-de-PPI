@@ -1,0 +1,271 @@
+.budgets {
+  width: 100%;
+}
+
+
+/* ==========================================
+   ENCABEZADO
+========================================== */
+
+.budgets-header {
+  margin-bottom: 30px;
+}
+
+.budgets-header h1 {
+  margin-bottom: 8px;
+}
+
+.budgets-header p {
+  color: #6b7280;
+}
+
+
+/* ==========================================
+   TARJETAS PRINCIPALES
+========================================== */
+
+.budget-form-card,
+.budget-list-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.budget-form-card h2,
+.budget-list-card h2 {
+  margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   FORMULARIO
+========================================== */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+/* ==========================================
+   BOTÓN PRINCIPAL
+========================================== */
+
+.budget-form-card form > button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.budget-form-card form > button:hover {
+  background-color: #374151;
+}
+
+
+/* ==========================================
+   LISTA
+========================================== */
+
+.budget-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+/* ==========================================
+   TARJETA PRESUPUESTO
+========================================== */
+
+.budget-card {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #f9fafb;
+}
+
+
+/* ==========================================
+   ENCABEZADO PRESUPUESTO
+========================================== */
+
+.budget-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.budget-card-header h3 {
+  margin-bottom: 5px;
+}
+
+.budget-card-header p {
+  color: #6b7280;
+}
+
+.budget-card-header > span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* ==========================================
+   FECHAS
+========================================== */
+
+.budget-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   PROGRESO
+========================================== */
+
+.budget-progress {
+  margin-bottom: 15px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progress-info span {
+  color: #6b7280;
+}
+
+.progress-info strong {
+  color: #111827;
+}
+
+
+/* ==========================================
+   BARRA
+========================================== */
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #111827;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+
+/* ==========================================
+   ALERTAS
+========================================== */
+
+.budget-alert {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.budget-alert.warning {
+  background-color: #fef3c7;
+}
+
+.budget-alert.danger {
+  background-color: #fee2e2;
+}
+
+
+/* ==========================================
+   ACCIONES
+========================================== */
+
+.budget-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.budget-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.budget-actions button:first-child {
+  background-color: #e5e7eb;
+}
+
+.budget-actions button:last-child {
+  background-color: #111827;
+  color: white;
+}
+
+
+/* ==========================================
+   MENSAJE VACÍO
+========================================== */
+
+.empty-message {
+  color: #6b7280;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+  .budget-list {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+}
