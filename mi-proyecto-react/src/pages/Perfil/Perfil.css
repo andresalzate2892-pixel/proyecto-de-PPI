@@ -1,0 +1,125 @@
+.perfil-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    color: #1f2937;
+  }
+  
+  .perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .perfil-header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+  }
+  
+  .perfil-header p {
+    margin: 0;
+    color: #6b7280;
+  }
+  
+  .perfil-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .perfil-form,
+  .perfil-seguridad {
+    padding: 25px;
+    margin-bottom: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: white;
+  }
+  
+  .perfil-form h2,
+  .perfil-seguridad h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 20px;
+  }
+  
+  .perfil-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .perfil-campo label {
+    font-weight: 600;
+  }
+  
+  .perfil-campo input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+  }
+  
+  .perfil-campo input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+  }
+  
+  .perfil-guardar {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .perfil-guardar:hover {
+    background: #1d4ed8;
+  }
+  
+  .perfil-mensaje {
+    margin-top: 15px;
+    color: #166534;
+  }
+  
+  .perfil-seguridad p {
+    margin-bottom: 0;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 600px) {
+    .perfil-container {
+      padding: 18px;
+    }
+  
+    .perfil-header {
+      align-items: flex-start;
+    }
+  
+    .perfil-avatar {
+      width: 55px;
+      height: 55px;
+      font-size: 24px;
+    }
+  
+    .perfil-form,
+    .perfil-seguridad {
+      padding: 18px;
+    }
+  }

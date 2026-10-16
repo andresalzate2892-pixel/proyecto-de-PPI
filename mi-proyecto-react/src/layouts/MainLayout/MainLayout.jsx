@@ -58,6 +58,9 @@ function MainLayout() {
             Reportes
           </Link>
 
+          <Link to="/perfil">
+            Mi perfil
+          </Link>
         </nav>
 
         <button

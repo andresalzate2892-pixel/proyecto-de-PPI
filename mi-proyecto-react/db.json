@@ -29,6 +29,12 @@
       "email": "pepe@pepe.com",
       "password": "pepe",
       "id": "vREl3wa933Y"
+    },
+    {
+      "name": "Leo",
+      "email": "Leo@gmail.com",
+      "password": "1234",
+      "id": "1vkl3HhdIng"
     }
   ],
   "espacios": [],
@@ -112,6 +118,26 @@
       "userId": "XbC4mp9elSU",
       "space": "Personal",
       "id": "07093nAusgU"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-10-22",
+      "description": "Arroz",
+      "value": 50000,
+      "category": "Alimentación",
+      "userId": "1vkl3HhdIng",
+      "space": "Personal",
+      "id": "q6GF8wRxJDM"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-10-21",
+      "description": "Arroz",
+      "value": 40000,
+      "category": "Alimentación",
+      "userId": "1vkl3HhdIng",
+      "space": "Personal",
+      "id": "5edSs2pBUSs"
     }
   ],
   "categorias": [],
@@ -154,6 +180,16 @@
       "userId": "XbC4mp9elSU",
       "space": "Personal",
       "id": "z_cS-RNvrfo"
+    },
+    {
+      "name": "Prueba",
+      "limit": 100000,
+      "category": "Alimentación",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "userId": "1vkl3HhdIng",
+      "space": "Personal",
+      "id": "60BFyrwIf6k"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

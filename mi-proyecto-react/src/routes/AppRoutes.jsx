@@ -14,6 +14,7 @@ import Movements from "../pages/Movements/Movements";
 import Categories from "../pages/Categories/Categories";
 import Presupuestos from "../pages/Presupuestos/Presupuestos";
 import Reports from "../pages/Reports/Reports";
+import Perfil from "../pages/Perfil/Perfil";
 
 import MainLayout from "../layouts/MainLayout/MainLayout";
 
@@ -72,6 +73,11 @@ function AppRoutes() {
             <Route
               path="/reports"
               element={<Reports />}
+            />
+
+            <Route
+              path="/perfil"
+              element={<Perfil />}
             />
 
           </Route>
