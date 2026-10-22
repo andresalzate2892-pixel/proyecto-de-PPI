@@ -148,6 +148,16 @@
       "userId": "XbC4mp9elSU",
       "space": "Personal",
       "id": "zybGWeGFzWs"
+    },
+    {
+      "type": "Gasto",
+      "date": "2026-10-13",
+      "description": "compra",
+      "value": 2000000,
+      "category": "Servicios",
+      "userId": "XbC4mp9elSU",
+      "space": "Personal",
+      "id": "qGUMMqSyDoA"
     }
   ],
   "categorias": [],
@@ -182,16 +192,6 @@
       "id": "60BFyrwIf6k"
     },
     {
-      "name": "cuota casa ",
-      "limit": 0,
-      "category": "General",
-      "startDate": "",
-      "endDate": "",
-      "userId": "XbC4mp9elSU",
-      "space": "Personal",
-      "id": "yBVMCqh3CZU"
-    },
-    {
       "name": "",
       "limit": 10000000000,
       "category": "General",
@@ -200,6 +200,16 @@
       "userId": "XbC4mp9elSU",
       "space": "Personal",
       "id": "-b_f1HLujE8"
+    },
+    {
+      "name": "pepe",
+      "limit": 23000,
+      "category": "Alimentación",
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-30",
+      "userId": "XbC4mp9elSU",
+      "space": "Personal",
+      "id": "xCxRqJPyJLE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
