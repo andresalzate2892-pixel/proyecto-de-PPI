@@ -27,7 +27,6 @@ exactum-backend/
 │   ├── utils/                    # AppError, asyncHandler, generador de ids
 │   ├── app.js                    # Configuración de Express
 │   └── server.js                 # Arranque: conecta a la BD y levanta el servidor
-├── postman/                      # Colección de Postman con pruebas
 ├── .env
 └── package.json
 ```
