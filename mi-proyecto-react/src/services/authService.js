@@ -18,13 +18,14 @@ export async function createUser(user) {
 }
 
 export async function loginUser(email, password) {
-  const users = await getUsers();
+  const response = await fetch(`${API_URL}/login`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ email, password })
+  });
 
-  const user = users.find(
-    (user) =>
-      user.email === email &&
-      user.password === password
-  );
-
-  return user || null;
+  if (!response.ok) return null;
+  return response.json();
 }

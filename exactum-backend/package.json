@@ -1,0 +1,26 @@
+{
+  "name": "exactum-backend",
+  "version": "1.0.0",
+  "description": "API REST de Exactum (finanzas personales y de emprendimiento) con Node.js, Express, Sequelize y SQL Server",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "express",
+    "sequelize",
+    "sql-server",
+    "rest-api"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.37.3",
+    "tedious": "^18.2.0"
+  }
+}
