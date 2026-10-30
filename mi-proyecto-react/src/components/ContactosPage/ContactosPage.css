@@ -1,0 +1,113 @@
+.con-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.con-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.con-group label {
+  font-weight: bold;
+}
+
+.con-group input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.con-error {
+  margin-bottom: 15px;
+  color: #b91c1c;
+}
+
+.con-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.con-actions button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.con-actions button:hover {
+  background-color: #374151;
+}
+
+.con-actions .con-secondary {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.con-actions .con-secondary:hover {
+  background-color: #d1d5db;
+}
+
+.con-search {
+  margin-bottom: 20px;
+}
+
+.con-search input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.con-table-wrapper {
+  overflow-x: auto;
+}
+
+.con-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.con-table th,
+.con-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.con-table th {
+  background-color: #f9fafb;
+}
+
+.con-notes {
+  display: block;
+  margin-top: 4px;
+  color: #6b7280;
+}
+
+.con-row-button {
+  padding: 7px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .con-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .con-table {
+    min-width: 700px;
+  }
+}

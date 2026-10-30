@@ -1,0 +1,250 @@
+/* ==========================================
+   ESTILOS COMPARTIDOS DE VENTAS Y GASTOS
+========================================== */
+
+.tx-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.tx-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tx-summary-card span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.tx-summary-card strong {
+  font-size: 24px;
+}
+
+
+/* ==========================================
+   FORMULARIO
+========================================== */
+
+.tx-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.tx-row-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tx-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tx-group label {
+  font-weight: bold;
+}
+
+.tx-group input,
+.tx-group select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.tx-error {
+  margin-bottom: 15px;
+  color: #b91c1c;
+}
+
+.tx-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.tx-actions button,
+.tx-add-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.tx-actions button:hover,
+.tx-add-button:hover {
+  background-color: #374151;
+}
+
+
+/* ==========================================
+   DETALLE DE LA VENTA (productos agregados)
+========================================== */
+
+.tx-items-box {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.tx-items-box h3 {
+  margin-bottom: 15px;
+}
+
+.tx-items-add {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 15px;
+  align-items: end;
+}
+
+.tx-items-add .tx-group {
+  margin-bottom: 0;
+}
+
+.tx-items-list {
+  margin-top: 20px;
+}
+
+.tx-total {
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: right;
+}
+
+
+/* ==========================================
+   FILTROS Y TABLAS
+========================================== */
+
+.tx-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tx-filters input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.tx-filters select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.tx-table-wrapper {
+  overflow-x: auto;
+}
+
+.tx-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tx-table th,
+.tx-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tx-table th {
+  background-color: #f9fafb;
+}
+
+.tx-detail {
+  display: block;
+  margin-top: 4px;
+  color: #6b7280;
+}
+
+.tx-row-button {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* ==========================================
+   ESTADOS
+========================================== */
+
+.tx-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tx-status-pagada {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.tx-status-pendiente {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.tx-status-vencida {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+  .tx-items-add {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .tx-summary,
+  .tx-row,
+  .tx-row-3,
+  .tx-items-add {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .tx-summary {
+    gap: 15px;
+  }
+
+  .tx-items-add {
+    gap: 15px;
+  }
+
+  .tx-filters {
+    flex-direction: column;
+  }
+
+  .tx-table {
+    min-width: 700px;
+  }
+}

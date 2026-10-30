@@ -1,0 +1,58 @@
+.emp-page {
+  width: 100%;
+}
+
+.emp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.emp-header h1 {
+  margin-bottom: 8px;
+}
+
+.emp-header p {
+  color: #6b7280;
+}
+
+.emp-space-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.emp-space-selector label {
+  font-weight: bold;
+}
+
+.emp-space-selector select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.emp-card {
+  padding: 25px;
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.emp-card h2 {
+  margin-bottom: 15px;
+}
+
+.emp-card p {
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .emp-header {
+    flex-direction: column;
+  }
+}
