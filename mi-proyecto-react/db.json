@@ -21,7 +21,7 @@
     {
       "name": "Andrés A.",
       "email": "andresalzate2898@hotmail.com",
-      "password": "Admin123",
+      "password": "Admin1234",
       "id": "XbC4mp9elSU"
     },
     {
@@ -35,6 +35,12 @@
       "email": "Leo@gmail.com",
       "password": "1234",
       "id": "1vkl3HhdIng"
+    },
+    {
+      "name": "Andrés A. ",
+      "email": "andreslopera2898@hotmail.com",
+      "password": "Admin123",
+      "id": "G05BTfyrFp0"
     }
   ],
   "espacios": [],
