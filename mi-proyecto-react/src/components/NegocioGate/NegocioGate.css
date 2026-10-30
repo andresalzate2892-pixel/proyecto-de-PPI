@@ -1,0 +1,39 @@
+.gate-message {
+  color: #6b7280;
+}
+
+.gate-card {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 35px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.gate-card h2 {
+  margin-bottom: 12px;
+}
+
+.gate-card p {
+  margin-bottom: 20px;
+  color: #6b7280;
+}
+
+.gate-card button,
+.gate-link {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111827;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gate-card button:hover,
+.gate-link:hover {
+  background-color: #374151;
+}
