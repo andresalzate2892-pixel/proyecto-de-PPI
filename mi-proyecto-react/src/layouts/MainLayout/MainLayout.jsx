@@ -5,11 +5,13 @@ import {
 } from "react-router-dom";
 
 import { useEffect } from "react";
+import { useSpace } from "../../context/SpaceContext";
 
 import "./MainLayout.css";
 
 function MainLayout() {
   const navigate = useNavigate();
+  const { space } = useSpace();
 
   const loggedUser =
     JSON.parse(
@@ -42,25 +44,76 @@ function MainLayout() {
 
         <nav>
 
-          <Link to="/dashboard">
-            Dashboard
-          </Link>
+          {space === "Emprendimiento" ? (
+            <>
+              <Link to="/emprendimiento/dashboard">
+                Dashboard
+              </Link>
 
-          <Link to="/movements">
-            Movimientos
-          </Link>
+              <Link to="/emprendimiento/ventas">
+                Ventas
+              </Link>
 
-          <Link to="/presupuestos">
-            Presupuestos
-          </Link>
+              <Link to="/emprendimiento/gastos">
+                Gastos
+              </Link>
 
-          <Link to="/reports">
-            Reportes
-          </Link>
+              <Link to="/emprendimiento/cuentas-por-cobrar">
+                Por cobrar
+              </Link>
 
-          <Link to="/perfil">
-            Mi perfil
-          </Link>
+              <Link to="/emprendimiento/cuentas-por-pagar">
+                Por pagar
+              </Link>
+
+              <Link to="/emprendimiento/inventario">
+                Inventario
+              </Link>
+
+              <Link to="/emprendimiento/clientes">
+                Clientes
+              </Link>
+
+              <Link to="/emprendimiento/proveedores">
+                Proveedores
+              </Link>
+
+              <Link to="/emprendimiento/reportes">
+                Reportes
+              </Link>
+
+              <Link to="/emprendimiento/mi-negocio">
+                Mi negocio
+              </Link>
+
+              <Link to="/perfil">
+                Mi perfil
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link to="/dashboard">
+                Dashboard
+              </Link>
+
+              <Link to="/movements">
+                Movimientos
+              </Link>
+
+              <Link to="/presupuestos">
+                Presupuestos
+              </Link>
+
+              <Link to="/reports">
+                Reportes
+              </Link>
+
+              <Link to="/perfil">
+                Mi perfil
+              </Link>
+            </>
+          )}
+
         </nav>
 
         <button

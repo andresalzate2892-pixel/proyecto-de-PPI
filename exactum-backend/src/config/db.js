@@ -25,6 +25,7 @@ if (dialect === 'sqlite') {
         options: {
           encrypt: false,
           trustServerCertificate: true,
+          useUTC: false,  
         },
       },
       logging: false,

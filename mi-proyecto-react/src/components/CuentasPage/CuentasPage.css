@@ -1,0 +1,100 @@
+/* Saldo por cliente / proveedor */
+
+.cu-contactos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.cu-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.cu-contacto small {
+  display: block;
+  margin-top: 4px;
+  color: #6b7280;
+}
+
+.cu-contacto span {
+  font-weight: bold;
+}
+
+
+/* Panel de abonos */
+
+.cu-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cu-detail-header h2 {
+  margin-bottom: 6px;
+}
+
+.cu-detail-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cu-detail-numbers div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 15px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.cu-detail-numbers span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.cu-detail-numbers strong {
+  font-size: 20px;
+}
+
+.cu-history-title {
+  margin: 25px 0 12px;
+}
+
+.cu-history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cu-history li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+@media (max-width: 900px) {
+  .cu-contactos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cu-contactos,
+  .cu-detail-numbers {
+    grid-template-columns: 1fr;
+  }
+}
