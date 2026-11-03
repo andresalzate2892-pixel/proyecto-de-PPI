@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Navigate } from "react-router-dom";
 
 import "./Dashboard.css";
 
@@ -92,6 +93,11 @@ function Dashboard() {
 
     setMovements(filteredMovements);
   }, [allMovements, space]);
+
+    // Si el espacio activo es Emprendimiento, va a su propio dashboard
+  if (space === "Emprendimiento") {
+    return <Navigate to="/emprendimiento/dashboard" replace />;
+  }
 
   const handleSpaceChange = (e) => {
     setSpace(e.target.value);
@@ -222,7 +228,7 @@ function Dashboard() {
     <div className="dashboard">
       <div className="dashboard-header">
         <div>
-          <h1>Hola, {userName} 👋</h1>
+          <h1>Hola, {userName} </h1>
 
           <p>
             Resumen de tus finanzas en{" "}
