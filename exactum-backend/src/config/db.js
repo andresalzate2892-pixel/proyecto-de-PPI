@@ -23,8 +23,7 @@ if (dialect === 'sqlite') {
       dialect: 'mssql',
       dialectOptions: {
         options: {
-          encrypt: false,
-          trustServerCertificate: true,
+          useUTC: false,  
         },
       },
       logging: false,
