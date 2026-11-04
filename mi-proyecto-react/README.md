@@ -1,16 +1,49 @@
-# React + Vite
+### Frontend - Sistema de Gestión Financiera y Emprendimiento
+# Descripción
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+|| Aplicación web desarrollada para facilitar la administración financiera y la gestión de emprendimientos mediante una interfaz intuitiva.
 
-Currently, two official plugins are available:
+|| Funcionalidades
+Inicio de sesión y registro de usuarios.
+Panel principal.
+Gestión de movimientos financieros.
+Administración de presupuestos.
+Gestión de emprendimientos.
+Navegación entre los diferentes módulos.
+Tecnologías
+React
+JavaScript
+Vite
+CSS
+Instalación
+Ingresar a la carpeta del frontend.
+## Instalar dependencias:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+npm install
 
-## React Compiler
+## Iniciar el proyecto:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+npm run dev
 
-## Expanding the ESLint configuration
+## Estructura
+mi-proyecto-react/
+├── public/
+├── src/
+│   ├── assets/            # Almacena imágenes, iconos, logotipos y otros recursos gráficos.
+│   ├── components/        # Contiene componentes reutilizables de la interfaz.
+│   ├── context/           # dministra estados globales de la aplicación, como la información del usuario
+│   ├── layouts/           # Define las estructuras generales de las páginas, como los menús laterales.
+│   ├── pages/             # Contiene las páginas principales del sistema, como inicio,emprendimientos etc
+│   ├── routes/            # Define la navegación entre las diferentes páginas y las rutas del frontend.
+│   ├── services/          # Contiene funciones para comunicarse con el backend mediante peticiones HTTP. 
+│   ├── utils/             # Contiene funciones auxiliares reutilizables para validaciones.
+│   ├── App.css            # contiene los estilos específicos del componente principal de la aplicación.
+│   ├── App.jsx            # es el componente principal donde se organiza la aplicación y sus componentes.
+│   ├── index.css          #contiene los estilos globales,como tipografía y configuración visual general.
+│   └── main.jsx           # Se encarga de renderizar la aplicación en el documento HTML
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
