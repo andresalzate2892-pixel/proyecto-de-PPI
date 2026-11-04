@@ -28,9 +28,14 @@ const Usuario = sequelize.define(
   {
     tableName: 'usuarios',
     timestamps: true,
-    // Por defecto la contraseña nunca sale en las respuestas
-    defaultScope: { attributes: { exclude: ['password'] } },
-    scopes: { withPassword: {} },
+    defaultScope: {
+      attributes: { exclude: ['password'] }
+    },
+    scopes: {
+      withPassword: {
+        attributes: { include: ['password'] }
+      }
+    }
   }
 );
 
